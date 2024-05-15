@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"node_gatehome\startup_stm32f103xb.o"
+"node_gatehome\main.o"
+"node_gatehome\stm32f1xx_it.o"
+"node_gatehome\stm32f1xx_hal_msp.o"
+"node_gatehome\stm32f1xx_hal_gpio_ex.o"
+"node_gatehome\stm32f1xx_hal_spi.o"
+"node_gatehome\stm32f1xx_hal.o"
+"node_gatehome\stm32f1xx_hal_rcc.o"
+"node_gatehome\stm32f1xx_hal_rcc_ex.o"
+"node_gatehome\stm32f1xx_hal_gpio.o"
+"node_gatehome\stm32f1xx_hal_dma.o"
+"node_gatehome\stm32f1xx_hal_cortex.o"
+"node_gatehome\stm32f1xx_hal_pwr.o"
+"node_gatehome\stm32f1xx_hal_flash.o"
+"node_gatehome\stm32f1xx_hal_flash_ex.o"
+"node_gatehome\stm32f1xx_hal_exti.o"
+"node_gatehome\stm32f1xx_hal_tim.o"
+"node_gatehome\stm32f1xx_hal_tim_ex.o"
+"node_gatehome\system_stm32f1xx.o"
+"node_gatehome\my_nrf24.o"
+"node_gatehome\rfid_rcc522.o"
+"node_gatehome\lcd20x4.o"
+"node_gatehome\flash.o"
+--strict --scatter "Node_GateHome\Node_GateHome.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Node_GateHome.map" -o Node_GateHome\Node_GateHome.axf
